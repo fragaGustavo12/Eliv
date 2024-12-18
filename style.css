@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+header {
+    background: #000;
+    color: 	#D3D3D3;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    height: 120px;  
+    width: 120px; 
+    align-items: left;	
+    justify-content: space-between;
+}
+header nav a {
+    color:	#D3D3D3;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 300;
+}
+/* Seção com imagem de fundo no lugar do hero */
+.hero-background {
+    background: url('https://comunicacao.hdvisual.net/blog/doutor/uploads/0/blog/2024/09/blog-ideias-modernas-para-fachada-de-loja-preta-181c6c24db.png') no-repeat center center/cover;
+    height: 100vh;  /* Isso faz com que a imagem cubra toda a altura da tela */
+    width: 100%;  /* Ocupa toda a largura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo do texto que aparece sobre a imagem */
+.hero-text {
+	font-family: 'Unna', serif;
+    color: 	#D3D3D3;
+}
+
+.hero-text h1 {
+    font-family: 'Unna', serif;
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-top: 20px;
+	
+}
+
+.about {
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-start; 
+    width: 80%;
+    margin: 100px auto;
+    gap: 30px; 
+}
+
+.about-text {
+    flex: 1; 
+    padding: 20px;
+}
+
+.about-map {
+    flex: 1; 
+}
+
+.about h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    text-align: left;
+}
+
+.about p {
+    margin-bottom: 20px; /* Espaço entre parágrafos */
+    line-height: 1.6;    /* Melhora a legibilidade */
+    text-align: justify; /* (Opcional) Alinha o texto justificado */
+}
+
+.about p:last-child {
+    margin-bottom: 0; /* Remove o espaçamento extra do último parágrafo */
+}
+
+
+iframe {
+    width: 600px;
+    height: 465px;
+    min-height: 300px;
+    border-radius: 8px;
+    border: none;
+}
+section.collections {
+    padding: 60px 40px;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+section.collections h2 {
+    font-family: 'Unna', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section.collections .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+section.collections .gallery .item {
+    width: 300px; /* Tamanho fixo para as imagens */
+    text-align: center;
+    display: inline-block;
+}
+
+section.collections .gallery img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover; /* Para garantir que a imagem preencha o espaço corretamente */
+}
+
+.extra-items {
+    display: none; /* Inicialmente oculto */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    align-items: center; /* Centraliza os itens no eixo horizontal */
+}
+
+.extra-items figure {
+    margin: 0;
+    text-align: center; /* Centraliza as legendas abaixo das imagens */
+}
+
+
+/* Estilo do botão "Mostrar Mais" */
+.show-more-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease;
+}
+
+.show-more-btn:hover {
+    background-color: gray;
+}
+
+
+section.contact {
+    padding: 60px 40px;
+    background: white;
+    text-align: center;
+}
+section.contact h2 {
+    font-family: 'Unna', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+section.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+section.contact form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+section.contact form input, section.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+section.contact form button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+footer	{
+background: #000;
+color: #fff;
+clear:	both;
+padding: 10px 0;
+position:	relative;
+}
+footer .logo {
+    height: 120px;  
+    width: 120px; 
+    align-items: left;	
+    justify-content: space-between;
+}
+.social a{
+height: 32px;
+width: 32px;
+display:	block;
+text-indent:	-9999px;
+float:	left;
+margin-left: 25px;
+}
+.social a[href*="facebook.com"]	{
+background-image:	url(../img/facebook.png);
+}
+.social a[href*="twitter.com"]	{
+background-image:	url(../img/twitter.png);
+}
+.social a[href*="instagram.com"]	{
+background-image:	url(../img/instagram.png);
+}
+.social	{
+position:	absolute;
+top: 50px;
+right: 0;
+}
+
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Eliv</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <a href="index.php"><img src="img/logoeliv.png" alt="logo eliv"></a>
+        </div>
+    </header>
+
+    <!-- Checkout -->
+    <div class="checkout-container">
+        <h1>Finalizar Compra</h1>
+        <form action="confirmacao.html" method="GET"> <!-- Alterado para GET -->
+            <!-- Dados do Cliente -->
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+                
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required placeholder="Digite seu CPF">
+            </fieldset>
+
+            <!-- Endereço -->
+            <fieldset>
+                <legend>Endereço de Entrega</legend>
+                <label for="logradouro">Endereço:</label>
+                <input type="text" id="logradouro" name="logradouro" required placeholder="Rua, número, bairro">
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required placeholder="Digite sua cidade">
+
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" required placeholder="Digite seu CEP">
+            </fieldset>
+
+            <!-- Forma de Pagamento -->
+            <fieldset>
+                <legend>Forma de Pagamento</legend>
+                <label for="cartao">Cartão de Crédito:</label>
+                <input type="radio" id="cartao" name="pagamento" value="cartao" required> Cartão de Crédito
+                <br>
+                <label for="boleto">Boleto Bancário:</label>
+                <input type="radio" id="boleto" name="pagamento" value="boleto" required> Boleto Bancário
+            </fieldset>
+
+            <!-- Botão de Envio -->
+            <input type="submit" class="finalizar" value="Finalizar Compra">
+        </form>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container-footer">
+            <div class="logo">
+                <img src="img/logoeliv.png" alt="logo eliv">
+            </div>
+            <div class="social">
+                <nav>
+                    <a href="http://facebook.com/eliv">Facebook</a>
+                    <a href="http://twitter.com/eliv">Twitter</a>
+                    <a href="http://instagram.com/eliv">Instagram</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

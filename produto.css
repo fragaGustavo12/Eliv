@@ -1,0 +1,181 @@
+/* Configuração global da fonte */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+/* Cabeçalho */
+header {
+    background-color: #000; /* Cabeçalho preto */
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 100px; /* Tamanho da logo */
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff; /* Cor dos links branco */
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #007bff; /* Cor do link ao passar o mouse */
+}
+
+}
+
+/* Estilos do produto */
+.produto-back {
+    padding: 50px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Exibir a imagem do produto */
+.imagem-produto {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imagem-produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Formatação para Tamanho */
+fieldset.tamanhos {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+fieldset.tamanhos legend {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    appearance: none;
+    margin-bottom: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    appearance: none;
+}
+
+output {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos do botão de compra */
+.comprar {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.comprar:hover {
+    background-color: #333;
+}
+
+/* Detalhes do produto */
+.detais {
+    margin-top: 40px;
+}
+
+.detais h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.detais p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+footer .container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .logo img {
+    height: 100px;
+}
+
+footer .social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer .social a:hover {
+    color: #007bff;
+}

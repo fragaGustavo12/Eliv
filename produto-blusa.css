@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Blusa</title>
+    <link rel="stylesheet" href="Produto.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Eliv - Loja de Roupas</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="colecoes.html">Coleções</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Detalhes do Produto -->
+    <main>
+        <section class="product-details">
+            <div class="product-images">
+                <img src="img/blusa1.png" alt="Blusa">
+            </div>
+            <div class="product-info">
+                <h2>Blusa de Alta Qualidade</h2>
+                <p class="price">R$ 129,90</p>
+                <p class="description">
+                    Esta blusa é confeccionada com tecido de alta qualidade, perfeita para ocasiões casuais ou formais. Disponível em várias cores e tamanhos.
+                </p>
+                <!-- Opções de cores -->
+                <div class="colors">
+                    <h3>Cores Disponíveis</h3>
+                    <button class="color" style="background-color: red;">Vermelho</button>
+                    <button class="color" style="background-color: blue;">Azul</button>
+                    <button class="color" style="background-color: black;">Preto</button>
+                </div>
+                <!-- Opções de tamanhos -->
+                <div class="sizes">
+                    <h3>Tamanhos</h3>
+                    <button class="size">P</button>
+                    <button class="size">M</button>
+                    <button class="size">G</button>
+                    <button class="size">GG</button>
+                </div>
+                <!-- Botão de compra -->
+                <button class="buy-button">Comprar Agora</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Eliv - Todos os direitos reservados.</p>
+        <p>Localizada no Shopping Diamond, Belo Horizonte.</p>
+    </footer>
+	<script>
+        document.querySelector('.buy-button').addEventListener('click', function() {
+            alert('Produto adicionado ao carrinho!');
+            window.location.href = "checkout.html"; // Redireciona para a página de checkout
+        });
+    </script>
+</body>
+</html>

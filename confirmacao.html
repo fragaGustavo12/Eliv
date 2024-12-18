@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Compra - Eliv</title>
+    <link rel="stylesheet" href="confirmacao.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logoeliv.png" alt="logo eliv"></a>
+        </div>
+    </header>
+
+    <div class="confirmacao">
+        <div class="container">
+            <h1>Compra Realizada com Sucesso!</h1>
+            <p>Obrigado pela sua compra! Estamos processando seu pedido.</p>
+
+            <div class="detalhes-compra">
+                <h2>Detalhes do Pedido</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Camisa Polo Clássica</td>
+                            <td>R$ 149,90</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Informações do Cliente</h3>
+                <p><strong>Nome:</strong> <span id="nome"></span></p>
+                <p><strong>Endereço:</strong> <span id="endereco"></span></p>
+                <p><strong>CPF:</strong> <span id="cpf"></span></p>
+                <p><strong>Forma de Pagamento:</strong> <span id="pagamento"></span></p>
+
+                <p>Seu pedido será enviado para o endereço informado. Fique atento à sua caixa de entrada para o envio do código de rastreamento.</p>
+            </div>
+
+            <div class="botao-continuar">
+                <a href="index.html" class="continuar">Voltar para a Loja</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container-footer">
+            <div class="logo">
+                <img src="img/logoeliv.png" alt="logo eliv">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Função para pegar os parâmetros da URL e exibir as informações do cliente
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById("nome").textContent = urlParams.get("email");  // Exibindo e-mail
+        document.getElementById("endereco").textContent = urlParams.get("logradouro") + ", " + urlParams.get("cidade") + " - " + urlParams.get("cep");
+        document.getElementById("cpf").textContent = urlParams.get("cpf");
+        document.getElementById("pagamento").textContent = urlParams.get("pagamento");
+    </script>
+</body>
+</html>
